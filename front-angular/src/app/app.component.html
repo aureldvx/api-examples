@@ -1,0 +1,9 @@
+<div>
+  <button (click)="retrievePosts()">Load posts</button>
+  <div *ngFor="let post of posts">
+    <h2>{{ post.title }}</h2>
+    <div>{{ post.content }}</div>
+    <time>{{ post.createdAt }}</time>
+    <time>{{ post.updatedAt }}</time>
+  </div>
+</div>
